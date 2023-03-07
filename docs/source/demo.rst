@@ -36,6 +36,7 @@ This block of code defines and calls the ``main()`` function, which is the entry
 * Import all needed packages
   
 .. code-block:: console
+		
   import numpy as np
   import os, sys
   import matplotlib.pyplot as plt
@@ -134,6 +135,7 @@ This block of code defines and calls the ``main()`` function, which is the entry
 * The ``dodown()`` function is defined to reduce the size of the input data using averaging.
   
 .. code-block:: console
+		
     #=================================================================================
     # Function to reduce the data used in the FoCUS algorithm
     #=================================================================================
@@ -146,6 +148,7 @@ This block of code defines and calls the ``main()`` function, which is the entry
 * The input data is loaded and reduced in size using the ``dodown()`` function.
   
 .. code-block:: console
+		
     #=================================================================================
     # Get data
     #=================================================================================
@@ -154,6 +157,7 @@ This block of code defines and calls the ``main()`` function, which is the entry
 * A random noise map is generated with the same power spectrum as the input data. The input map is in nested ordering.
   
 .. code-block:: console
+		
     #=================================================================================
     # Generate a random noise with the same coloured than the input data
     #=================================================================================
@@ -198,7 +202,9 @@ This block of code defines and calls the ``main()`` function, which is the entry
                      nstep_max=instep)
 		     
 * The Wavelet Scattering Coefficients of the input data are computed using the ``sc.funct()`` function from the imported module.
+  
 .. code_block:: console
+		
      if docross:
         refX=scat_op.eval(im,image2=im,Imaginary=True)
     else:
@@ -257,6 +263,7 @@ This block of code defines and calls the ``main()`` function, which is the entry
 * The output data is saved to files.
   
 .. code-block:: console
+		
     #=================================================================================
     # STORE RESULTS
     #=================================================================================
