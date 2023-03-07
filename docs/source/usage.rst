@@ -6,29 +6,27 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
+To use Foscat, first install it using pip:
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+   >pip install foscat
 
-Creating recipes
-----------------
+Compute scattering Covariance
+-----------------------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+To compute scattering covariance,
+you can use the ``foscat.scat_cov`` python class:
 
-.. autofunction:: lumache.get_random_ingredients
+.. autofunction:: foscat.scat_cov
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
 
-.. autoexception:: lumache.InvalidKindError
 
 For example:
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+>>> import foscat.scat_cov as sc
+>>> scat_op=sc.funct()
+>>> im=np.load('Venus.py')
+>>> sCoef=scat_op.eval(im)
+>>> sCoef.plot()
 

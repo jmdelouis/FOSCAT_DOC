@@ -18,7 +18,7 @@ To run the demo, choose the nside:
 
 .. code-block:: console
 
-    (.venv) $ python demo.py -n=8 [-c|--cov][-s|--steps=3000][-S=1234|--seed=1234][-x|--xstat][-p|--p00][-g|--gauss][-k|--k5x5][-d|--data][-o|--out][-K|--k128]
+    > python demo.py -n=8 [-c|--cov][-s|--steps=3000][-S=1234|--seed=1234][-x|--xstat][-p|--p00][-g|--gauss][-k|--k5x5][-d|--data][-o|--out][-K|--k128]
      -n : is the nside of the input map (nside max = 256 with the default map)
      --cov (optional): use scat_cov instead of scat.
      --steps (optional): number of iteration, if not specified 1000.
@@ -31,6 +31,13 @@ To run the demo, choose the nside:
      --data  (optional): If not specified use Venu_256.npy.
      --out   (optional): If not specified save in *_demo_*.'
 
- once the **demo.py** script has been run, it is possible to plot the results using the function **plotdemo.py**
+once the **demo.py** script has been run, it is possible to plot the results using the function **plotdemo.py**
 
-   (.venv) $ python demo.y -n=64 -c -o=MyVenus
+   > python plotdemo.y -n=64 -c -o=MyVenus
+
+
+.. _work2D
+
+Synthesis an image
+-------------------
+
