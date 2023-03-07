@@ -1,10 +1,7 @@
-Welcome to Lumache's documentation!
+Welcome to FOSCAT's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**FOSCAT** (/lu'make/) is a Python library to generate data on a sphere and or a 2D image constrained by Wavelet Scattering transform coefficients.
 
 Check out the :doc:`usage` section for further information, including
 how to :ref:`installation` the project.
@@ -20,3 +17,4 @@ Contents
 
    usage
    api
+   demo
