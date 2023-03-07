@@ -21,7 +21,6 @@ you can use the ``foscat.scat_cov`` python class:
 .. autofunction:: foscat.scat_cov
 
 
-
 For example:
 
 >>> import foscat.scat_cov as sc
